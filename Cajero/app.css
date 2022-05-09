@@ -1,0 +1,37 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem = 10px*/
+}
+.title{
+    text-align: center;
+    margin: 4rem 0;
+}
+.container{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.background{
+    background-color: #789;
+    width: 70em;
+    height: 30rem;
+    border-radius: 2rem;
+    display:flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.ingreso{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+}
+/*Clase que hara invisible tu div*/
+.visibility{
+    visibility: hidden;
+}
+/*parte2*/
+.registro{
+    margin-top:4rem;
+    display: flex;
+    justify-content: space-evenly;
+}
