@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem* = 10px*/
+}
+
+.title{
+    text-align: center;
+}
+.container{
+    margin: 0 auto;
+    max-width: 120rem;
+}
+.fondo{
+    background-color: #159;
+    width:  50rem;
+    height: 25rem;
+}
+.fondo_back{
+    background-color: #000
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+  
+}
+.parte1:first-child{
+    padding-top: 5rem;
+}
+.parte1{
+    padding: 0.5rem 35%;
+}
+.formulario{
+    margin: 2rem 17rem;
+}
+.formulario__campo{
+    margin-bottom: 2rem;
+}
+.input{
+    display: flex
+}
+.formulario__color{
+    margin-left: 6rem;
+}
