@@ -1,5 +1,5 @@
 const formulario__campo = document.querySelector(".formulario__campo");
-const boton = document.querySelector(".formulario__submit");
+
 const main = document.querySelector(".main");
 const mostar1 = document.querySelector(".monto1")
 const mostar2 = document.querySelector(".monto2")
@@ -18,33 +18,12 @@ const black = document.querySelector(".black_boton");
 
 
 
-monto_boton.addEventListener("click", ingreso);
-retiro_boton.addEventListener("click", retiro);
-
-function ingreso() {
-    total = total + parseFloat(monto.value)
-    return total;
-}
-
-function retiro() {
-    total = total - parseFloat(mostar_retiro.value)
-}
 
 
-mostrar_boton.addEventListener("click", function () {
-    mostar_saldo.value = total;
-})
+formulario__campo.addEventListener("change",visivilidad);
 
 
-
-boton.addEventListener("click", function () {
-
-    if(formulario__campo.value == ingreso){
-        mostar1.classList.toggle("visibility");
-        mostar2.classList.toggle("visibility");
-
-    }
-
+function visivilidad() {
     switch (formulario__campo.value) {
 
         case 'ingreso':
@@ -67,7 +46,28 @@ boton.addEventListener("click", function () {
             break
 
     }
+}
+
+
+monto_boton.addEventListener("click", ingreso);
+retiro_boton.addEventListener("click", retiro);
+
+function ingreso() {
+    total = total + parseFloat(monto.value)
+    return total;
+}
+
+function retiro() {
+    total = total - parseFloat(mostar_retiro.value)
+}
+
+
+mostrar_boton.addEventListener("click", function () {
+    mostar_saldo.value = total;
 })
+
+
+
 
 black.addEventListener("click",function () {
     main.classList.toggle("black")
