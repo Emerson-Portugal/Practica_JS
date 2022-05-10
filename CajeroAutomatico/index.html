@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Cajero Web</title>
+</head>
+
+<body>
+
+    <h1 class="title"> Este es el Cajero Web Magico</h1>
+    <main class="main container">
+
+        <div class="operacion">
+            <select class="formulario__campo">
+                <option disabled selected>-- Seleccionar la operacion --</option>
+                <option value="ingreso">Ingresar Dinero</option>
+                <option value="retiro">Retira tu dinero</option>
+                <option value="saldo">Mira tu Saldo</option>
+            </select>
+            <input class="formulario__submit" type="submit" value="Realizar la Operacion">
+    
+        </div>
+
+
+        <div class="monto1 visibility ">
+            <input type="text" class="monto__ingreso">
+            <input type="submit"  class="monto__boton-ingreso" value="Ingreso">
+        </div>
+
+        <div class="monto2 visibility">
+            <input type="text" class="monto__retiro">
+            <input type="submit"  class="monto__boton-retiro" value="Retiro">
+        </div>
+
+        <div class="monto3 visibility">
+            <input type="text" class="monto__saldo">
+            <input type="submit"  class="monto__boton-saldo" value="Saldo">
+        </div>
+
+        <input type="submit" class="black_boton" value="Black">
+
+    </main>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
