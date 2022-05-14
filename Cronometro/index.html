@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+    <link rel="stylesheet" href="app.css">
+    <title>Cronometro</title>
+</head>
+
+<body>
+
+    <h1 class="title">¿Cuanto falta para tu cumpleaños?</h1>
+
+    <div class="container">
+
+        <div class="cont">
+            <div class="days-c">
+                <p class="text" id="days">0</p>
+                <span class="text-span">days</span>
+            </div>
+
+            <div class="hours-c">
+                <p class="text" id="hours">0</p>
+                <span class="text-span">hours</span>
+            </div>
+
+            <div class="mins-c">
+                <p class="text" id="mins">0</p>
+                <span class="text-span">mins</span>
+            </div>
+
+            <div class="seconds-c">
+                <p class="text" id="seconds">0</p>
+                <span class="text-span">seconds</span>
+            </div>
+        </div>
+
+        <div class="cont2">
+            <input type="date"  class="fecha-c" id="fecha" placeholder="Escribe tu fecha de nacimiento">
+            <div> <input type="submit" class="boton" value="Enviar"></div>
+            <div> <input type="submit" class="boton boton-s" value="Stop"></div>
+        </div>
+
+    </div>
+
+    </main>
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

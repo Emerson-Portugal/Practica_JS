@@ -1,0 +1,66 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /*1rem* = 10px*/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+    background-image: url(img/happy.jpg);
+    background-size: cover;
+    background-position: center center;
+    min-height: 80vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cont{
+    display: flex;
+}
+
+.title {
+    color: #fff;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.text, .text-span{
+    color: #fff;
+}
+.text{
+    font-size: 5rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+.text-span{
+    font-size: 3rem;
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.cont2{
+    display: flex;
+    gap: 2rem;
+    margin-top: 8rem;
+
+}
+.boton{
+    margin-top: 1rem;
+    width: 15rem; 
+    height: 4rem;
+    font-size: 3rem;
+}
+.fecha-c{
+/*     padding: 2rem 10rem; */
+    width: 25rem; 
+    height: 6rem;
+    font-size: 3rem;
+    border: 1rem solid #ccc;
+    border-radius: 1rem;
+    text-align: center;
+}
