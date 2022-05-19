@@ -1,0 +1,56 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem* = 10px*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.title_primary{
+    font-size: 5rem;
+}
+
+.title {
+    text-align: center;
+    font-size:4rem;
+}
+
+
+.contenedor{
+    background-color:#d2dae2;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    width: 50rem;
+
+
+}
+.nav{
+    padding: 0;
+    margin: 0;
+    list-style:none;
+    text-align: center;
+    
+}
+.nav li{
+    font-size: 2.5rem;
+    margin: 3rem 0;
+}
+.btn-primary{
+    font-size: 2.5rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 1.5rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
