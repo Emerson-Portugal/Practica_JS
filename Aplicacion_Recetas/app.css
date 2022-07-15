@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+    font-size: 100px;
+}
+.recetas{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.element{
+    margin: 0 auto;
+}
+
+.element p{
+    font-size: 50px;
+}
+
+
+.element img{
+    width: 150px;
+    height: 150px;
+}
