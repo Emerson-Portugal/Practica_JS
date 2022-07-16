@@ -3,20 +3,46 @@ h1{
     font-size: 100px;
 }
 .recetas{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction: column; /*opcional*/
+    align-items: center;  /*opcional*/
+    justify-content: center;
+    min-height: 100vh;
+
 }
-.element{
-    margin: 0 auto;
+.info{
+    border: 1px solid #000;
+    padding: 10px;
+    
+}
+.info h2{
+    font-size: 15px;
+    text-align: center;
 }
 
-.element p{
-    font-size: 50px;
+.info img{
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
 }
 
 
-.element img{
-    width: 150px;
-    height: 150px;
+.almacen{
+    border: 1px solid #000;
+    padding:20px;
+    margin: 20px;
+}
+.parte_almacen{
+    border: 1px solid #000;
+}
+
+.parte_almacen h2{
+    font-size: 15px;
+    text-align: center;
+}
+
+.parte_almacen img{
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
 }
